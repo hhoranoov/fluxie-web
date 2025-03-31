@@ -1,0 +1,75 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overscroll-behavior: none;
+}
+
+html {
+  font-family: var(--ff-kyiv-type);
+  scrollbar-width: thin;
+}
+
+body {
+  background: var(--bg-primary);
+  transition: var(--transition-1);
+}
+
+body.active {
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a, img, time, span, input, label, select, button, textarea, i {
+  display: block;
+}
+
+input, button, select, textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button, select {
+  cursor: pointer;
+  outline: none;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+i {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:is(a, button, select) {
+  outline-color: var(--brown);
+  outline-offset: 3px;
+}
+
+:is(.hero-social-list, .scroll-down) {
+  display: none;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--bg-primary);
+}

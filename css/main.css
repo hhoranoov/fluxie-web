@@ -1,0 +1,45 @@
+@import url(./about.css);
+@import url(./components.css);
+@import url(./contact.css);
+@import url(./footer.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./projects.css);
+@import url(./queries.css);
+@import url(./reset.css);
+@import url(./stats.css);
+@import url(./variables.css);
+
+.container {
+  padding-inline: 10px;
+}
+
+.section-subtitle {
+  position: absolute;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+.section-title {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.section-text {
+  color: var(--color-secondary);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+}

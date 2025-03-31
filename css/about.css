@@ -1,0 +1,18 @@
+.about {
+  padding-block: var(--section-padding);
+}
+
+.about-banner {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+
+.about .btn {
+  max-width: unset;
+  width: 100%;
+}
+
+.about .btn-secondary {
+  margin-bottom: 10px;
+}

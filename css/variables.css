@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url("../assets/fonts/KyivTypeSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --purpl: #915bac;
+  --reddi: #eaa0ac;
+  --brown: #d3b0b9;
+  --pinki: #f9ccd8;
+  --black: #1c1c1c;
+  --white: #fffcff;
+
+  --ff-kyiv-type: "KyivTypeSans", sans-serif;
+
+  --fs-1: 2rem;
+  --fs-2: calc(1.813rem + 1vw);
+  --fs-3: calc(1.313rem + 1vw);
+  --fs-4: 1.4rem;
+  --fs-5: 1rem;
+  --fs-6: .813rem;
+  --fs-7: .75rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --transition-1: .25s ease-in-out;
+
+  --section-padding: 80px;
+
+  --radius-4: 4px;
+  --radius-12: 12px;
+}
+
+body.dark-theme {
+  --bg-primary: #1f1f1f;
+  --bg-secondary: #303030;
+  --color-primary: #ffffff;
+  --color-secondary: #9e9e9e;
+  --card-shadow: #00000066;
+  --input-bg: #292929;
+  --shadow-1: 10px 10px 40px var(--card-shadow);
+}
+
+body.light-theme {
+  --bg-primary: #f6f6f6;
+  --bg-secondary: #ffffff;
+  --color-primary: #1f1f1f;
+  --color-secondary: #5e5e5e;
+  --card-shadow: #0000001a;
+  --input-bg: #ededed;
+  --shadow-1: 10px 10px 40px var(--card-shadow);
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.h2, .h3, .h4 {
+  color: var(--color-primary);
+  font-family: var(--ff-kyiv-type);
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+}
+
+.h3 {
+  font-size: var(--fs-3);
+}
+
+.h4 {
+  font-size: var(--fs-5);
+}
+
+.w-100 {
+  width: 100%;
+}

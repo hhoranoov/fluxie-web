@@ -1,0 +1,21 @@
+.footer {
+  background: var(--bg-secondary);
+  padding-block: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-1);
+}
+
+.footer .logo {
+  margin-bottom: 15px;
+}
+
+.copyright {
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+.copyright a {
+  font-family: var(--ff-kyiv-type);
+  display: inline-block;
+  color: var(--brown);
+}
