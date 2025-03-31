@@ -65,10 +65,6 @@ a {
   outline-offset: 3px;
 }
 
-:is(.hero-social-list, .scroll-down) {
-  display: none;
-}
-
 ::selection {
   background: var(--color-primary);
   color: var(--bg-primary);
