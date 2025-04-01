@@ -1,5 +1,5 @@
 {
-  "logo": "fluxie",
+  "logo": "fluxie.",
   "home": "home",
   "about": "about",
   "contact": "contacts",
@@ -18,5 +18,9 @@
   "numbert": "Phone number",
   "msg": "Your message",
   "where-send": "Where to send:",
-  "send": "Send"
+  "send": "Send",
+  "fluxie-contacts": "fluxie | contact",
+  "fluxie-about": "fluxie | about",
+  "fluxie-index": "fluxie | home"
+
 }
