@@ -285,3 +285,10 @@
     max-width: 450px;
   }
 }
+
+@media (max-width: 982px) {
+  canvas {
+    display: none;
+    opacity: 0;    
+  }
+}

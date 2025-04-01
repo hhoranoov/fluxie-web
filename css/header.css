@@ -181,3 +181,14 @@
 .navbar-link:is(:hover, :focus)::before {
   width: 100%;
 }
+
+.link-bot {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: var(--transition-1);
+}
+
+.link-bot:hover {
+  color: var(--brown);
+  text-decoration: none;
+}
