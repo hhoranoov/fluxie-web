@@ -3,10 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>флюксі | правила</title>
+    <title data-lang="fluxie-privacy">флюксі | правила</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="shortcut icon" href="../assets/images/fav.ico" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   </head>
-  <body></body>
+  <body class="dark-theme">
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <span class="loading-text">флюксі.</span>
+    </div>
+
+
+
+    <!-- FLAG -->
+    <div class="flag-container">
+      <a href="https://savelife.in.ua/projects/status/active/">
+        <img src="../assets/images/ua.png" alt="ua" class="ukraine-flag" />
+      </a>
+    </div>
+
+    <!-- TOP -->
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <i class="bx bx-chevron-up"></i>
+    </a>
+
+    <!-- ======================================== -->
+    <!-- ============ HEADER SECTION ============ -->
+    <!-- ======================================== -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="../index" data-lang="logo">флюксі</a>
+        </h1>
+
+        <div class="navbar-actions">
+          <select name="language" id="lang">
+            <option value="ua">ua</option>
+            <option value="gb">gb</option>
+          </select>
+
+          <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li><a href="../index" class="navbar-link" data-lang="home">домівка</a></li>
+            <li><a href="./about" class="navbar-link" data-lang="about">про нас</a></li>
+            <li><a href="./contacts" class="navbar-link" data-lang="contact">контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <section class="privacy">
+          <h1 class="privacy-title">Політика конфіденційності</h1>
+
+          <p class="privacy-text">Ця Політика конфіденційності описує, як ми збираємо, використовуємо та захищаємо ваші дані при використанні нашого Telegram-бота (далі Флюксі).</p>
+
+          <h2 class="privacy-subtitle">1. Інформація, яку ми збираємо</h2>
+          <p class="privacy-text">Ми можемо збирати такі типи інформації:</p>
+          <ul class="privacy-list">
+            <li class="privacy-list-item">Ваше ім'я та ім'я користувача у Telegram.</li>
+            <li class="privacy-list-item">Ідентифікатор чату для коректної роботи бота.</li>
+            <li class="privacy-list-item">Історія повідомлень для покращення якості відповідей.</li>
+            <li class="privacy-list-item">Будь-які інші дані, які ви надсилаєте через бота.</li>
+          </ul>
+
+          <h2 class="privacy-subtitle">2. Як ми використовуємо вашу інформацію</h2>
+          <p class="privacy-text">Ми використовуємо вашу інформацію виключно для таких цілей:</p>
+          <ul class="privacy-list">
+            <li class="privacy-list-item">Надання відповідей на ваші запити.</li>
+            <li class="privacy-list-item">Збереження історії для контексту в майбутніх повідомленнях.</li>
+            <li class="privacy-list-item">Поліпшення роботи бота та його функціоналу.</li>
+          </ul>
+
+          <h2 class="privacy-subtitle">3. Чи передаємо ми дані третім особам?</h2>
+          <p class="privacy-text">
+            Ми не передаємо ваші особисті дані третім особам. Винятком є випадки, коли це вимагається законом або офіційним запитом правоохоронних органів.
+          </p>
+
+          <h2 class="privacy-subtitle">4. Безпека ваших даних</h2>
+          <p class="privacy-text">
+            Ми використовуємо відповідні технічні заходи для захисту ваших даних. Проте варто пам’ятати, що передача інформації через інтернет ніколи не є на 100% безпечною.
+          </p>
+
+          <h2 class="privacy-subtitle">5. Ваші права</h2>
+          <p class="privacy-text">Ви маєте право:</p>
+          <ul class="privacy-list">
+            <li class="privacy-list-item">Видалення вашої історії повідомлень через команду <code>/clearhistory</code>. Або подати запит до адміністрації на будь-які взаємодії стосовно вашої історії.</li>
+            <li class="privacy-list-item">Отримати доступ до ваших даних, які зберігає бот.</li>
+            <li class="privacy-list-item">Припинити використання бота у будь-який момент.</li>
+          </ul>
+
+          <h2 class="privacy-subtitle">6. Відповідність правилам Telegram</h2>
+          <p class="privacy-text">Наш бот дотримується <a class="privacy-link" href="https://telegram.org/privacy">політики конфіденційності Telegram</a>. Ми не зберігаємо та не використовуємо ваші дані всупереч правилам Telegram.
+          </p>
+
+          <h2 class="privacy-subtitle">7. Зміни до політики</h2>
+          <p class="privacy-text">Ми можемо оновлювати цю політику конфіденційності. Усі зміни будуть опубліковані на цій сторінці.</p>
+
+          <h2 class="privacy-subtitle">8. Контакти</h2>
+          <p class="privacy-text">Якщо у вас є питання, зв'яжіться з нами:</p>
+          <ul class="privacy-list">
+            <li class="privacy-list-item">Email: <a class="privacy-link" href="mailto:contact@fluxie.pp.ua">contact@fluxie.pp.ua</a></li>
+            <li class="privacy-list-item">Telegram: <a class="privacy-link" href="https://t.me/fluxiebot">@fluxiebot</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <!-- ======================================== -->
+    <!-- ============= FOOTER SECTION =========== -->
+    <!-- ======================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="../index" data-lang="logo">флюксі</a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2025
+          <a href="https://www.instagram.com/horaanov/" target="_blank">Anastas Horanov</a>. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- ======================================== -->
+    <!-- ================ SCRIPTS =============== -->
+    <!-- ======================================== -->
+    <script src="../js/lang.js" defer></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/preloader.js"></script>
+  </body>
 </html>

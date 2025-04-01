@@ -1,0 +1,51 @@
+.privacy {
+  padding-block: var(--section-padding);
+  padding-top: 150px;
+  color: var(--color-primary);
+}
+
+.privacy-title {
+  font-size: var(--fs-2);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.privacy-text {
+  font-size: var(--fs-6);
+  line-height: 1.8;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.privacy-subtitle {
+  font-size: var(--fs-4);
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.privacy-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: var(--transition-1);
+}
+
+.privacy-link:hover {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+.privacy-list {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-list-item {
+  font-size: var(--fs-6);
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
