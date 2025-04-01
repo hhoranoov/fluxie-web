@@ -36,13 +36,13 @@
     <header class="header" data-header>
       <div class="container">
         <h1 class="h1 logo">
-          <a href="#">флюксі<span>.</span></a>
+          <a href="#" data-lang="logo">флюксі</a>
         </h1>
 
         <div class="navbar-actions">
           <select name="language" id="lang">
-            <option value="en">ua</option>
-            <option value="es">gb</option>
+            <option value="ua">ua</option>
+            <option value="gb">gb</option>
           </select>
 
           <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -58,9 +58,9 @@
 
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
-            <li><a href="/index" class="navbar-link">домівка</a></li>
-            <li><a href="./pages/about" class="navbar-link">про нас</a></li>
-            <li><a href="./pages/contacts" class="navbar-link">контакти</a></li>
+            <li><a href="/index" class="navbar-link" data-lang="home">домівка</a></li>
+            <li><a href="./pages/about" class="navbar-link" data-lang="about">про нас</a></li>
+            <li><a href="./pages/contacts" class="navbar-link" data-lang="contact">контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -77,7 +77,7 @@
           <img src="./assets/images/hero-lg.png" alt="logo" class="w-100" />
 
           <div class="hero-content">
-            <h2 class="h3 hero-title">триває розробка..</h2>
+            <h2 class="h3 hero-title" data-lang="title">триває розробка..</h2>
           </div>
 
           <ul class="hero-social-list">
@@ -109,6 +109,7 @@
     <!-- =============== SCRIPTS ================ -->
     <!-- ======================================== -->
 
+    <script src="./js/lang.js" defer></script>
     <script src="./js/preloader.js"></script>
     <script src="./js/cursor.js"></script>
     <script src="./js/main.js"></script>

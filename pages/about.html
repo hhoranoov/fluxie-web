@@ -20,7 +20,7 @@
     <!-- FLAG -->
     <div class="flag-container">
       <a href="https://savelife.in.ua/projects/status/active/">
-        <img src="./assets/images/ua.png" alt="ua" class="ukraine-flag" />
+        <img src="../assets/images/ua.png" alt="ua" class="ukraine-flag" />
       </a>
     </div>
 
@@ -36,13 +36,13 @@
     <header class="header" data-header>
       <div class="container">
         <h1 class="h1 logo">
-          <a href="#">флюксі<span>.</span></a>
+          <a href="#" data-lang="logo">флюксі<span>.</span></a>
         </h1>
 
         <div class="navbar-actions">
           <select name="language" id="lang">
-            <option value="en">ua</option>
-            <option value="es">gb</option>
+            <option value="ua">ua</option>
+            <option value="gb">gb</option>
           </select>
 
           <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -58,9 +58,9 @@
 
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
-            <li><a href="../index" class="navbar-link">домівка</a></li>
-            <li><a href="./about" class="navbar-link">про нас</a></li>
-            <li><a href="./contacts" class="navbar-link">контакти</a></li>
+            <li><a href="../index" class="navbar-link" data-lang="home">домівка</a></li>
+            <li><a href="./about" class="navbar-link" data-lang="about">про нас</a></li>
+            <li><a href="./contacts" class="navbar-link" data-lang="contact">контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -77,9 +77,9 @@
           </figure>
 
           <div class="about-content section-content">
-            <p class="section-subtitle">Про нас</p>
-            <h2 class="h2 section-title">флюксі&horanov</h2>
-            <p class="section-text">
+            <p class="section-subtitle" data-lang="about">Про нас</p>
+            <h2 class="h2 section-title" data-lang="section-title">флюксі&horanov</h2>
+            <p class="section-text" data-lang="about-me">
               Привіт, я Анастас, студент та розробник "флюксі.". Флюксі - моя особиста ініціатива, яка виникла з бажання створити сервіс в якому буде доступно все що мені
               необхідно. Цей проєкт розвивається та вдосконалюється, користування безкоштовне, моя ціль - доступність. Втім якщо у Вас є можливість подякувати, нижче є доступні
               сервіси.
@@ -87,8 +87,8 @@
           </div>
 
           <div class="btn-group">
-            <button class="btn btn-secondary"><i class="bx bx-coffee"></i> в процесі</button>
-            <button class="btn btn-primary">в процесі</button>
+            <button class="btn btn-secondary" data-lang="soon">в процесі</button>
+            <button class="btn btn-primary" data-lang="soon">в процесі</button>
           </div>
         </section>
       </article>
@@ -113,6 +113,7 @@
     <!-- ======================================== -->
     <!-- ================ SCRIPTS =============== -->
     <!-- ======================================== -->
+    <script src="../js/lang.js" defer></script>
     <script src="../js/main.js"></script>
     <script src="../js/cursor.js"></script>
     <script src="../js/preloader.js"></script>

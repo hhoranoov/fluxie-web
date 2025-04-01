@@ -10,9 +10,9 @@
   </head>
   <body class="dark-theme">
     <!-- PRELOADER -->
-    <div class="preloader">
+    <!-- <div class="preloader">
       <span class="loading-text">флюксі.</span>
-    </div>
+    </div> -->
 
     <!-- CURSOR -->
     <canvas></canvas>
@@ -20,7 +20,7 @@
     <!-- FLAG -->
     <div class="flag-container">
       <a href="https://savelife.in.ua/projects/status/active/">
-        <img src="./assets/images/ua.png" alt="ua" class="ukraine-flag" />
+        <img src="../assets/images/ua.png" alt="ua" class="ukraine-flag" />
       </a>
     </div>
 
@@ -36,13 +36,13 @@
     <header class="header" data-header>
       <div class="container">
         <h1 class="h1 logo">
-          <a href="#">флюксі<span>.</span></a>
+          <a href="#" data-lang="logo">флюксі</a>
         </h1>
 
         <div class="navbar-actions">
           <select name="language" id="lang">
-            <option value="en">ua</option>
-            <option value="es">gb</option>
+            <option value="ua">ua</option>
+            <option value="gb">gb</option>
           </select>
 
           <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -58,9 +58,9 @@
 
         <nav class="navbar" data-navbar>
           <ul class="navbar-list">
-            <li><a href="../index" class="navbar-link">домівка</a></li>
-            <li><a href="./about" class="navbar-link">про нас</a></li>
-            <li><a href="./contacts" class="navbar-link">контакти</a></li>
+            <li><a href="../index" class="navbar-link" data-lang="home">домівка</a></li>
+            <li><a href="./about" class="navbar-link" data-lang="about">про нас</a></li>
+            <li><a href="./contacts" class="navbar-link" data-lang="contact">контакти</a></li>
           </ul>
         </nav>
       </div>
@@ -73,9 +73,9 @@
       <article class="container">
         <section class="contact" id="contact">
           <div class="contact-content section-content">
-            <p class="section-subtitle">контакти</p>
-            <h2 class="h3 section-title">Є нові ідеї? Або виникла проблема</h2>
-            <p class="section-text">Завжди на зв'язку з вами, допоможемо по мірі можливостей, хочете запропонувати власну допомогу - раді вас почути!</p>
+            <p class="section-subtitle" data-lang="contact">контакти</p>
+            <h2 class="h3 section-title" data-lang="contact-title">Є нові ідеї? Або виникла проблема</h2>
+            <p class="section-text" data-lang="contact-text">Завжди на зв'язку з вами, допоможемо по мірі можливостей, хочете запропонувати власну допомогу - раді вас почути!</p>
 
             <ul class="contact-list">
               <li class="contact-list-item">
@@ -84,8 +84,8 @@
                 </div>
 
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Адреса:</h3>
-                  <address class="contact-info">Її немає.., але це не заважає працювати</address>
+                  <h3 class="h4 contact-item-title" data-lang="address">Адреса:</h3>
+                  <address class="contact-info" data-lang="address-info">Її немає.., але це не заважає працювати</address>
                 </div>
               </li>
 
@@ -95,9 +95,9 @@
                 </div>
 
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Номер телефону:</h3>
-                  <a href="0993693015" class="contact-info">(099) 369-3015</a>
-                  <a href="0730166570" class="contact-info">(073) 016-6570</a>
+                  <h3 class="h4 contact-item-title" data-lang="number">Номер телефону:</h3>
+                  <a href="tel:0993693015" class="contact-info">(099) 369-3015</a>
+                  <a href="tel:0730166570" class="contact-info">(073) 016-6570</a>
                 </div>
               </li>
 
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Поштова скринька:</h3>
+                  <h3 class="h4 contact-item-title" data-lang="mail">Поштова скринька:</h3>
                   <a href="mailto:horranovv@gmail.com" class="contact-info">horranovv@gmail.com</a>
                 </div>
               </li>
@@ -138,7 +138,7 @@
 
           <form action="" class="contact-form">
             <div class="form-wrapper">
-              <label for="name" class="form-label">Ім'я</label>
+              <label for="name" class="form-label" data-lang="name">Ім'я</label>
 
               <div class="input-wrapper">
                 <input type="text" name="name" id="name" required placeholder="Олександр" class="input-field" />
@@ -147,7 +147,7 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="email" class="form-label">Поштова скринька</label>
+              <label for="email" class="form-label" data-lang="mailt">Поштова скринька</label>
 
               <div class="input-wrapper">
                 <input type="email" name="email" id="email" required placeholder="oleksandr@gmail.com" class="input-field" />
@@ -156,7 +156,7 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="phone" class="form-label">Номер телефону</label>
+              <label for="phone" class="form-label" data-lang="numbert">Номер телефону</label>
 
               <div class="input-wrapper">
                 <input type="tel" name="phone" id="phone" required placeholder="1234567890" class="input-field" />
@@ -165,7 +165,7 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="message" class="form-label">Запит</label>
+              <label for="message" class="form-label" data-lang="msg">Запит</label>
 
               <div class="input-wrapper">
                 <textarea name="message" id="message" class="input-field" required placeholder="Напишіть повідомлення"></textarea>
@@ -174,11 +174,11 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="contact-method" class="form-label">Куди надіслати:</label>
+              <label for="contact-method" class="form-label" data-lang="where-send">Куди надіслати:</label>
               <div class="contact-method-wrapper">
                 <label class="contact-method-option" for="contact-email">
                   <input type="radio" id="contact-email" name="contact-method" value="email" checked />
-                  <span class="option-label">Пошта</span>
+                  <span class="option-label" data-lang="mailt">Пошта</span>
                 </label>
 
                 <label class="contact-method-option" for="contact-telegram">
@@ -188,7 +188,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn btn-primary" onclick="sendMessage();">Надіслати</button>
+            <button type="button" class="btn btn-primary" onclick="sendMessage();" data-lang="send">Надіслати</button>
           </form>
         </section>
       </article>
@@ -213,6 +213,7 @@
     <!-- ======================================== -->
     <!-- ================ SCRIPTS =============== -->
     <!-- ======================================== -->
+    <script src="../js/lang.js" defer></script>
     <script src="../js/main.js"></script>
     <script src="../js/cursor.js"></script>
     <script src="../js/preloader.js"></script>
